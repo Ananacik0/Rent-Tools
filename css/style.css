@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    background-color: #DEDEDE;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button, input {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block; /*делаем ссылки блочно-строчными, что поможет сделать область ссылки подстраиваемую под содержимое ссылки*/
+    color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1160px;
+} 
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #E7B400;
+}
+
+nav .nav_header_ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    font-size: 16px;
+}
+
+.burger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border: 2px solid #000;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.burger:hover  {
+    background-color: #000;
+    color: #fff;
+    transition: 0.1s;
+}
+
+.burger:hover .burger_menu {
+    background-color: #fff;
+}
+
+.burger_menu {
+    background-color: #000;
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    border: 0px solid #000;
+    border-radius: 2px;
+}
+
+.catalog_span {
+    font-size: 16px;
+}
+
+.form_search {
+    background-color: #dedede00;
+}
+
+.search_panel input {
+    width: 375px;
+    height: 28px;
+    padding: 5px;
+    padding-left: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    background: #DEDEDE;
+    color: #4F4F4F;
+    font-size: 16px;
+}
+
+.search_panel button {
+    width: 75px;
+    height: 40px;
+    background-color: #E7B400;
+    color: #000;
+    font-size: 16px;    
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.search_panel button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.contacts span {
+    display: block;
+    color: #000;
+    padding: 4px 0;
+}
+
+.city a {
+    cursor: pointer;
+}
+
+.block_bottom {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.block_bottom_nav {
+    background-color: #474747;
+}
+
+.block_bottom li {
+    font-size: 16px;
+    color: #DEDEDE;
+    margin: 20px 0;
+}
+
+.block_bottom li:hover {
+    color: #E7B400;
+    transition: 0.1s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.block_bottom a {
+    color: #DEDEDE;
+}
+
+.block_bottom a:hover {
+    color: #E7B400;
+    transition: 0.1s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.footer_info {
+    width: 100%;
+    height: 360px;
+    background-color: #E7B400;
+    display: flex;
+    align-self: center;
+}
+
+.info_of_user {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.footer_logo img {
+    width: 160px;
+    height: 160px;
+    
+}
+
+.contacts_num {
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+    gap: 10px;
+    flex-direction: column;
+} 
+
+.contacts_mail {
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.social_mess a img {
+    width: 30px;
+    margin: 0px 5px;
+}
+
+.social_mess a img:hover {
+    cursor: pointer;
+}
+
+.company_info li {
+    font-size: 16px;
+    color: #000;
+    margin: 20px 0;   
+}
+
+.company_info li:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.user_help li {
+    font-size: 16px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.user_help li:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+
