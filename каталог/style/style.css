@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block; /*делаем ссылки блочно-строчными, что поможет сделать область ссылки подстраиваемую под содержимое ссылки*/
+  color: #000;
+}
+
+h2 {
+  font-size: 40px;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+/** header **/
+
+.header {
+   background-color: #E7B400;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 80px;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.header__contacts--item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.header__contacts--item--city {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header__contacts--item--number {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header__menu--list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.header__button {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    border: 1px solid #000000;
+    transition: 0.2s;
+}
+
+/** end header **/
+
+/** breadcrumb **/
+
+.breadcrumb {
+    padding-top: 35px;
+    margin-bottom: 80px;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-weight: 300;
+}
+
+.breadcrumb li a {
+    color: #4F4F4F;
+}
+
+.breadcrumb li:last-child {
+    text-decoration: underline;
+    color: #E7B400;
+}
+
+/** end breadcrumb **/
+
+
+/** catalog **/
+
+.main__catalog {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__item {
+    border: 0;
+    border-radius: 10px;
+    width: 500px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.catalog__item>h2 {
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 35px 0 0 50px;
+    color: #ffffff;
+}
+
+.catalog__item>p {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 0 50px 35px 50px;
+}
+
+.main__catalog--rent {
+    background-image: url(/img/content/rent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__catalog--sale {
+    background-image: url(/img/content/sale.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/** end catalog **/
+
+
+/** footer **/
+
+.footer {
+    background-color: #E7B400;
+    margin-top: 8%;
+    padding: 70px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo img {
+    width: 18vh;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.footer__contacts--number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer__contacts--number img {
+    width: 30px;
+}
+
+.footer__contacts--mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer__messenger--icon {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__company--link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.footer__company--link li:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer__users--link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.footer__users--link li:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/** end footer **/

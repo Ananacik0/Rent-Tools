@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block; /*делаем ссылки блочно-строчными, что поможет сделать область ссылки подстраиваемую под содержимое ссылки*/
+  color: #000;
+}
+
+h2 {
+  font-size: 40px;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+/** header **/
+
+.header {
+   background-color: #E7B400;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 80px;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.header__contacts--item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.header__contacts--item--city {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header__contacts--item--number {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header__menu--list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.header__button {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    border: 1px solid #000000;
+    transition: 0.2s;
+}
+
+/** end header **/
+
+/** breadcrumb **/
+
+.breadcrumb {
+    padding-top: 35px;
+    margin-bottom: 80px;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-weight: 300;
+}
+
+.breadcrumb li a {
+    color: #4F4F4F;
+}
+
+.breadcrumb li:last-child {
+    text-decoration: underline;
+    color: #E7B400;
+}
+
+/** end breadcrumb **/
+
+/** company info **/
+
+.company__services>h2 {
+    margin: 60px 0 80px 0;
+}
+
+.company__services>h3 {
+    font-size: 34px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 27px 0 27px 25px;
+    margin-bottom: 100px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(98,98,98,1) 26%, rgba(255,255,255,1) 70%);
+    border: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.company__services--list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    margin-bottom: 140px;
+    justify-content: space-between;
+    row-gap: 150px;
+}
+
+.services__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+}
+
+
+
+.services__item--description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    align-items: center;
+    width: 350px;
+}
+
+.services__item--description>h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+
+}
+
+.services__item--description>p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.services__item:last-child img {
+    height: 64px;
+}
+
+/** end company info **/
+
+
+/** company info **/
+
+.company__info {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.company__info-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    align-items: center;
+    width: 100%;
+}
+
+.company__info-item>h2 {
+    color: #E7B400;
+    text-transform: none;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.company__info-item>p {
+    width: 65%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+}
+
+/** end company info **/
+
+
+/** company__description **/
+
+.company__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    margin-bottom: 40px;
+}
+
+.company__description--item>h3 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.company__description--item>p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #000000;
+    line-height: 25px;
+}
+
+/** end company__description **/
+
+
+/** company__description **/
+
+.company__link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.company__link--item>h2 {
+    color: #E7B400;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+.company__link--item>p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #000000;
+}
+
+.company__link--item p>a {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: 300;
+}
+
+
+/** end company__description **/
+
+
+/** footer **/
+
+.footer {
+    background-color: #E7B400;
+    margin-top: 100px;
+    padding: 70px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo img {
+    width: 18vh;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.footer__contacts--number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer__contacts--number img {
+    width: 30px;
+}
+
+.footer__contacts--mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer__messenger--icon {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__company--link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.footer__company--link li:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer__users--link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.footer__users--link li:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/** end footer **/

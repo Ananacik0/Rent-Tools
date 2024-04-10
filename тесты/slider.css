@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block; /*делаем ссылки блочно-строчными, что поможет сделать область ссылки подстраиваемую под содержимое ссылки*/
+  color: #000;
+}
+
+h2 {
+  font-size: 40px;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+
+/*----------------- category -----------------*/
+
+.category__carousel {
+  width: 100%;
+  height: 100%;
+  margin: 80px 0 100px 0;
+}
+
+.category__carousel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  background: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 10px;
+  height: 110px;
+}
+
+.category__carousel .swiper-slide img {
+  display: block;
+  width: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/*----------------- end category -----------------*/
+
+
+
+
+
+/*----------------- img -----------------*/
+
+.img__carousel {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.img__carousel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__carousel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img__carousel .swiper-slide p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0 0 20px;
+  font-size: 32px;
+  color: #E7B400;
+  width: 390px;
+  text-align: start;
+}
+
+/*----------------- end img -----------------*/
+
+
+
+
+
+/*----------------- new Tools -----------------*/
+
+.newtools__carousel {
+  width: 100%;
+  height: 100%;
+  margin: 80px 0 100px 0;
+}
+
+.newtools__carousel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.newtools__carousel .swiper-slide img {
+  display: block;
+  width: 70%;
+  object-fit: cover;
+}
+
+.name__newtool--card {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.name__newtool--card>a:hover {
+  text-decoration: underline;
+  color: rgb(49, 49, 49);
+}
+
+.characteristics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.options, .value {
+  line-height: 25px;
+}
+
+.options {
+  text-align: start;
+  font-weight: 300;
+}
+
+.values {
+  text-align: end;
+  font-weight: 500;
+}
+
+.price {
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.add__basket {
+  padding: 10px 25px;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #E7B400;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.add__basket:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+/*----------------- end new tools -----------------*/
+
+
+
+
+
+/*----------------- promotion -----------------*/
+
+.promotion__carousel {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0 30px 0;
+}
+
+.promotion__carousel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.promotion__carousel .swiper-slide img {
+  display: block;
+  width: 70%;
+  object-fit: cover;
+}
+
+.promotion {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #E7B400;
+}
+
+.name__promotiontool--card {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.name__promotiontool--card>a:hover {
+  text-decoration: underline;
+  color: rgb(49, 49, 49);
+}
+
+.name__promotiontool--card>a:hover {
+  text-decoration: underline;
+  color: rgb(49, 49, 49);
+}
+
+.promotion__carousel .price {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.old__price {
+  font-size: 14px;
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+
+
+/*----------------- end promotion -----------------*/
